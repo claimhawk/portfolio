@@ -571,6 +571,35 @@ export default function HomePage(): React.ReactElement {
 
       <hr className="my-16 border-zinc-200 dark:border-zinc-800" />
 
+      {/* Why Looking */}
+      <section className="mb-16">
+        <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+          Why am I looking for a job? Don&apos;t I &quot;run&quot; a company?
+        </h2>
+        <p className="mb-6 text-lg text-zinc-600 dark:text-zinc-400">
+          My company was built from day one with the goal of automating my CTO job out of existence.
+        </p>
+        <div className="mb-6 space-y-2 text-lg text-zinc-600 dark:text-zinc-400">
+          <div className="flex items-center gap-3">
+            <span className="text-green-500">&#10003;</span>
+            <span>Step one - do all the work, hire no employees</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-green-500">&#10003;</span>
+            <span>Step two - make the pipeline accessible to a &quot;low skill&quot; worker</span>
+          </div>
+        </div>
+        <p className="mb-4 text-lg text-zinc-600 dark:text-zinc-400">
+          My business partners are doing a fine job on the operations and customer side of the business:
+        </p>
+        <ul className="list-inside list-disc space-y-1 text-lg text-zinc-600 dark:text-zinc-400">
+          <li>I don&apos;t currently have a lot to do</li>
+          <li>I want to work with smart people solving problems in a new world</li>
+        </ul>
+      </section>
+
+      <hr className="my-16 border-zinc-200 dark:border-zinc-800" />
+
       {/* What I'm Looking For */}
       <section id="contact" className="mb-8 scroll-mt-20">
         <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
