@@ -441,11 +441,20 @@ export default function HomePage(): React.ReactElement {
           The orchestrator understands the current screen state and generates the exact sequence of atomic actions
           that each LoRA expert was trained on. This bridges natural language instructions to pixel-perfect execution.
         </p>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400">
+        <p className="mb-8 text-lg text-zinc-600 dark:text-zinc-400">
           The agent runs on a <strong className="text-zinc-900 dark:text-zinc-100">VM-based desktop</strong> and
           operates the computer like a human would - moving the cursor, clicking buttons, typing text. No APIs,
           no integrations, no special access. Just vision and mouse/keyboard control.
         </p>
+
+        <div className="rounded-lg border border-zinc-200 bg-zinc-100 p-6 dark:border-zinc-700 dark:bg-zinc-800/50">
+          <h3 className="mb-3 font-semibold text-zinc-900 dark:text-white">Future: RL Flywheel</h3>
+          <p className="text-zinc-700 dark:text-zinc-300">
+            Currently working on an <strong className="text-zinc-900 dark:text-white">RL Flywheel system</strong> using
+            gamification to &quot;collapse&quot; the multiple LoRA experts into a single student model. Using DPO and other
+            methods to push accuracies up to 99% for customer workflows.
+          </p>
+        </div>
       </section>
 
       <hr className="my-16 border-zinc-200 dark:border-zinc-800" />
