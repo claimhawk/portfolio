@@ -32,11 +32,11 @@ export default function HomePage(): React.ReactElement {
         </div>
 
         {/* Timeline */}
-        <div className="mb-12">
+        <div className="mb-12 rounded-lg bg-zinc-100/60 p-6 dark:bg-zinc-800/60">
           <h2 className="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
             27 Years of Building
           </h2>
-          <div className="relative border-l-2 border-zinc-300 pl-8 dark:border-zinc-700">
+          <div className="relative border-l-2 border-zinc-400 pl-8 dark:border-zinc-600">
             <TimelineItem year="1998" highlight={false}>
               First job writing production code
             </TimelineItem>
@@ -572,7 +572,7 @@ export default function HomePage(): React.ReactElement {
       <hr className="my-16 border-zinc-200 dark:border-zinc-800" />
 
       {/* What I'm Looking For */}
-      <section className="mb-8">
+      <section id="contact" className="mb-8 scroll-mt-20">
         <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           What I&apos;m Looking For
         </h2>
