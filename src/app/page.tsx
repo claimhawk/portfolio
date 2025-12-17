@@ -397,6 +397,54 @@ export default function HomePage(): React.ReactElement {
 
       <hr className="my-16 border-zinc-200 dark:border-zinc-800" />
 
+      {/* Agent Harness */}
+      <section className="mb-20">
+        <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+          The Agent Harness
+        </h2>
+        <p className="mb-4 text-lg text-zinc-600 dark:text-zinc-400">
+          Remembering back to learning the Sutton method to teach simple models to play games like Pacman or Donkey Kong,
+          I realized that a low-skill computer job could be trained in a similar manner:
+        </p>
+        <ol className="mb-6 list-inside list-decimal space-y-2 text-lg text-zinc-600 dark:text-zinc-400">
+          <li>Take a screenshot and preprocess</li>
+          <li>Feed into the model with possible augmentation (zero-shot vs bootstrap)</li>
+          <li><strong className="text-zinc-900 dark:text-zinc-100">RL path:</strong> Use rewards and Q-tables</li>
+          <li><strong className="text-zinc-900 dark:text-zinc-100">SL path:</strong> Generate data using an MCTS bot</li>
+        </ol>
+        <p className="mb-8 text-lg text-zinc-600 dark:text-zinc-400">
+          The agent harness is built around <strong className="text-zinc-900 dark:text-zinc-100">tool use</strong>,
+          a <strong className="text-zinc-900 dark:text-zinc-100">state machine</strong>, and an
+          <strong className="text-zinc-900 dark:text-zinc-100"> orchestration expert</strong> that decomposes
+          general tasks into expert-level actions.
+        </p>
+
+        <div className="mb-8 grid gap-6 lg:grid-cols-2">
+          <div>
+            <h3 className="mb-3 font-semibold text-zinc-900 dark:text-zinc-100">High-Level Task</h3>
+            <div className="rounded-lg bg-zinc-100 p-4 font-mono text-sm dark:bg-zinc-800">
+              Log in with Dr G and &quot;Password&quot; for the password
+            </div>
+          </div>
+          <div>
+            <h3 className="mb-3 font-semibold text-zinc-900 dark:text-zinc-100">Expert-Level Actions</h3>
+            <div className="rounded-lg bg-zinc-100 p-4 font-mono text-sm dark:bg-zinc-800">
+              <div className="text-green-600 dark:text-green-400">1. Click Dr G in the user list</div>
+              <div className="text-green-600 dark:text-green-400">2. Click the password field</div>
+              <div className="text-green-600 dark:text-green-400">3. Type &quot;Password&quot;</div>
+              <div className="text-green-600 dark:text-green-400">4. Click the OK button</div>
+            </div>
+          </div>
+        </div>
+
+        <p className="text-lg text-zinc-600 dark:text-zinc-400">
+          The orchestrator understands the current screen state and generates the exact sequence of atomic actions
+          that each LoRA expert was trained on. This bridges natural language instructions to pixel-perfect execution.
+        </p>
+      </section>
+
+      <hr className="my-16 border-zinc-200 dark:border-zinc-800" />
+
       {/* Mixture of Experts */}
       <section className="mb-20">
         <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
