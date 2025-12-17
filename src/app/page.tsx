@@ -437,9 +437,14 @@ export default function HomePage(): React.ReactElement {
           </div>
         </div>
 
-        <p className="text-lg text-zinc-600 dark:text-zinc-400">
+        <p className="mb-4 text-lg text-zinc-600 dark:text-zinc-400">
           The orchestrator understands the current screen state and generates the exact sequence of atomic actions
           that each LoRA expert was trained on. This bridges natural language instructions to pixel-perfect execution.
+        </p>
+        <p className="text-lg text-zinc-600 dark:text-zinc-400">
+          The agent runs on a <strong className="text-zinc-900 dark:text-zinc-100">VM-based desktop</strong> and
+          operates the computer like a human would - moving the cursor, clicking buttons, typing text. No APIs,
+          no integrations, no special access. Just vision and mouse/keyboard control.
         </p>
       </section>
 
